@@ -84,3 +84,24 @@
 //     console.log("your age is bellow 18..")
 // }
 
+
+
+// pratice question 
+// let size = "L"
+
+// if (size == "Xl"){
+//     console.log("popcorn prize is 250.")
+// }
+// else if(size == "L"){
+//     console.log("popcorn prize is 200.")
+// }
+// else if(size == "M"){
+//     console.log("popcorn prize is 100.")
+// }
+// else if(size == "S"){
+//     console.log("popcorn prize is 50.")
+// }
+// else{
+//     console.log("Invalid input, please try again")
+// }
+
