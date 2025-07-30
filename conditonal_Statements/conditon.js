@@ -35,3 +35,17 @@
 // if (color == "green"){
 //     console.log("go....");
 // }
+
+
+// use of else if statement
+let age = 20;
+
+if (age >= 18){
+    console.log("you are eligible for license.")
+}
+else if (age >= 21){
+    console.log("you are elgible for marriage.")
+}
+else {
+    console.log("you are not elgible")
+}
