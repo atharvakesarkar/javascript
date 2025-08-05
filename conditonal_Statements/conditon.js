@@ -105,3 +105,20 @@
 //     console.log("Invalid input, please try again")
 // }
 
+
+// // example for nester conditonal statements
+// marks = 70;
+
+// if (marks >= 80){
+//     console.log("pass");
+//     if (marks >= 80){
+//         console.log("grade: A");
+//     }
+// }
+// if (marks >= 70){
+//     console.log("pass2");
+//     if (marks >= 70){
+//         console.log("grade: B")
+//     }
+// }
+
