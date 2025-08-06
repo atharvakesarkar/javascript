@@ -30,3 +30,19 @@
 //     console.log("pass")
 // }
 
+
+
+// not [!] - this opertor will reverse the final answer 
+
+// !(5<3); = true
+
+// example for or
+
+// let marks = 45;
+// if (!(marks > 30)){
+//     console.log("the or opertor is use")
+// } else {
+//     console.log("invalid input")
+// }
+
+
