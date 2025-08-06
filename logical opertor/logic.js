@@ -46,3 +46,11 @@
 // }
 
 
+// using all the opertor 
+// let marks = 45;
+// if ((marks >= 45) && (marks == 45) || !(false) ) {
+//     console.log("yes my all the condition are true , so you are pass")
+// }
+
+
+
