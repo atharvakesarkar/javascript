@@ -23,9 +23,10 @@
 // }  
 
 
-// let marks = 80;
 
-// switch(marks) {
+// let marks = "atharva ";
+
+// switch (marks) {
 //     case 100:
 //         console.log("A+");
 //         break;
@@ -53,4 +54,11 @@
 //     case 40:
 //         console.log("fail");
 //         break;
-//     }
+
+//     default:
+//         console.log("invalid input")
+// }
+
+
+
+
