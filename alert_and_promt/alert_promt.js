@@ -25,3 +25,14 @@
 // let lastname = prompt("enter your lastname: ");
 
 // console.log(firstname + " " + lastname);
+
+
+// user input and alert will give output
+
+// let firstname = prompt("enter you firstname: "); 
+// let lastname = prompt("enter you lastname: ");
+
+// alert(firstname + " " + lastname);
+
+
+
