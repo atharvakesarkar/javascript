@@ -9,4 +9,19 @@
 
 // console.log("this is simple message")
 // console.error("this is a error message")
+
 // console.warn("this is a waring message")
+
+
+
+
+// prompt
+
+// let name = prompt("Enter your name: ");
+// console.log(name);
+
+
+// let firstname = prompt("enter your firsname: ");
+// let lastname = prompt("enter your lastname: ");
+
+// console.log(firstname + " " + lastname);
