@@ -1,0 +1,12 @@
+// alert("something went wrong")
+
+// alert("hello world!")  //this is use to give alert  [pop message]
+
+// console.log("this is simple log.") //this is use to print on the console
+// console.error("this is the error msg.") //it will come like an error    
+// console.warn("this is waring message")
+
+
+// console.log("this is simple message")
+// console.error("this is a error message")
+// console.warn("this is a waring message")
