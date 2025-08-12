@@ -15,6 +15,16 @@
 // console.log(newpassword);
 
 
+// // STRING IMMUTABLE:
+// let msg = "           atharva            ";
+// console.log(msg)
+
+// let str = msg.trim();
+// console.log(str)
+
+// console.log(msg)
+
+
 
 
 
