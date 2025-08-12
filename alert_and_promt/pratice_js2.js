@@ -66,3 +66,16 @@
 // } else {
 //     console.log("num3 is the largest number");
 // }
+
+
+
+// // q6
+// num1 = 47852;
+// num2 = 10;
+
+// if (num1 % 10){
+//     console.log("both the number have same last digit")
+// } else {
+//     console.log("both the number dont have same last digit")
+// }
+
