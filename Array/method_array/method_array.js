@@ -20,7 +20,21 @@
 
 
 // POP - Delete from the end and return it 
-
+        
 // let arr = [10,20,30,40,50];
 // arr.pop();
 // console.log(arr); //OUTPUT - (4) [10, 20, 30, 40]
+
+
+//  INDEEX OF - element found - return index number , not found - reutun -1
+// let arr = ['apple','pineapple','carrot','lemon'];
+// console.log(arr.indexOf('apple')); //OUTPUT - apple
+
+// console.log(arr.indexOf('grapes')); //OUTPUT - grapes
+
+
+
+// INCLUDES - found - 
+// let arr = [10,20,30,40,50];
+// console.log(arr.includes(10)); // OUTPUT - true
+// console.log(arr.includes(60)); // OUTPUT - false
