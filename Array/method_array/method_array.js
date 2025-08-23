@@ -85,3 +85,15 @@
 
 // arr.splice(2,1,"krutika");
 // console.log(arr);
+
+
+
+// SORT - it goes with asending and descending
+
+// arr = ["Atharva" , "Krutika" , "Aaradhya" , "Rajesh" ,"Riya", "Prakash"];
+// console.log(arr.sort()); //OUTPUT - 
+// (6) ['Aaradhya', 'Atharva', 'Krutika', 'Prakash', 'Rajesh', 'Riya']
+
+
+// arr = [100, 99 , 98, 54, 56] //FOR NUMBERS, SORT METHOD CONVERT IT INTO THE STRING AND THEN SORT
+// console.log(arr.sort())  //OUTPUT - (5) [100, 54, 56, 98, 99]
