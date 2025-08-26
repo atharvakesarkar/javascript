@@ -1,3 +1,6 @@
+// Your mistake is that you wrote two separate if statements, but still tried to use a single else for both — an else can only belong to one if.
+
+
 // let age = 18;
 
 // if (age>=18){
@@ -6,6 +9,7 @@
 // else {
 //     console.log("sorry, you are not eligible.");
 // }
+
 
 
 
@@ -19,6 +23,8 @@
 // if (age < 18){
 //     console.log("No, you can't vote.")
 // }
+
+
 
 
 // pratice Qs
@@ -35,6 +41,8 @@
 // if (color == "green"){
 //     console.log("go....");
 // }
+
+
 
 
 // // use of else if statement
@@ -74,7 +82,8 @@
 // }
 
 
-// use of else statement
+
+// // use of else statement
 // let age = 8;
 
 // if (age >= 18){
@@ -86,7 +95,10 @@
 
 
 
+
+
 // pratice question 
+
 // let size = "L"
 
 // if (size == "Xl"){
@@ -106,6 +118,8 @@
 // }
 
 
+
+
 // // example for nester conditonal statements
 // marks = 70;
 
@@ -122,3 +136,18 @@
 //     }
 // }
 
+
+
+// let age = 18;
+
+// if (age >= 18){
+//     console.log("you are elgible for vote")
+//        if (age >= 21){
+//     console.log("you are elgible for marriage")
+//     }   else{
+//     console.log("you are not elgible for marriage")
+//     } 
+    
+// } else {
+//     console.log("you are not elgible for vote")
+// }
