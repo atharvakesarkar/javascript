@@ -1,3 +1,7 @@
+
+// An object literal is the syntax you used to directly create an object by writing it inside curly braces {}.
+
+
 // MAKING OF OBJECT LIERALS
 
 // let student = {
@@ -52,6 +56,7 @@
 //     undefined: "e"
 // }
 
+
 // console.log(check[1]);
 // console.log(check[2]);
 // console.log(check[true]);
@@ -72,3 +77,26 @@
 // console.log(student);
 
 
+// VALUES ADD OR UPDATE
+
+// const student = {
+//     name: "Atharva",
+//     age: 18,
+//     contactno: 9820919318,
+//     city: "Mumbai",
+//     gender: "Male",
+//     marks: 90
+// }
+
+// student.name = "Krutika";  // change the value
+// student.gender = "Female";  //change the value
+// student.marks = [90 , 80, 50, 40]; //you can also use the array
+// student.lastname = "kesarkar"   //add the key and value
+
+// console.log(student);  //to print the object literals
+
+
+
+// DELETE THE OBJECT literals
+// delete student.name;   //use to delete the literal
+// console.log(student);
