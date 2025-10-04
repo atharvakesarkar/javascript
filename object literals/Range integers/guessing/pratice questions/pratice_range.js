@@ -27,5 +27,5 @@
 // };
 
 // let change = person.city = "New york";
-
-// console.log(person)
+// person.country = "United states"
+// ;console.log(person)
