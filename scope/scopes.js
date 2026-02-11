@@ -67,12 +67,34 @@
 // console.log(a); // ReferenceError
 // let a = 10;
 
+// ________________________________________________________________________________________________________
+
 //THE opposite is not possible
+
 // function outerfunc() {
 //   function innerfunc() {
 //     let a = 10;
-//     console.log(a);
 //   }
+//   console.log(a);
 
 //   innerfunc();
 // }
+
+//---------------------------------------------------------------------------------------------------------------
+
+//pratice questions
+// 1. what will be the output
+
+let greet = "hello"; //global scope
+
+function changegreet() {
+  let greet = "namaste"; //function scope
+  console.log(greet);
+
+  function innergreet() {
+    console.log(greet); //lexical scope
+  }
+}
+
+console.log(greet); //hello
+changegreet(); //namaste
