@@ -64,18 +64,38 @@
 
 // console.log(highest(obj));
 
+//-------------------------------------------------------------------------------------------------------------
+
 //q4. write a javascript function to count  the number of vowels in string argument
 
-let name = "Atharva kesarkar";
+// let str = prompt("enter your input: ");
+// let vowels = "aeiou";
 
-let count = "";
+// let novowelsfunc = function (str) {
+//   str = str.toLowerCase();
 
-for (let i = 0; i < name.length; i++) {
-  // console.log(name[i]);
+//   let novowels = "";
+//   for (let i = 0; i < str.length; i++) {
+//     // console.log(str[i]);
+
+//     if (!vowels.includes(str[i])) {
+//       novowels += str[i];
+//     }
+//   }
+//   return novowels;
+// };
+// console.log(novowelsfunc(str));
+
+//--------------------------------------------------------------------------------------------------------------
+
+//q5.whrite a javascript function to generate a random number with a range(Start , end)
+
+let start = 100;
+let end = 200;
+
+function randomnumber(start, end) {
+  let diff = end - start;
+  return Math.floor(Math.random() * diff) + start;
 }
 
-let vowels = "aeiou";
-
-for (let n = 0; n < vowels.length; n++) {
-  console.log(vowels[n]);
-}
+console.log(randomnumber(start, end));
