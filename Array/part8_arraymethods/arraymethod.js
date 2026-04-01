@@ -89,3 +89,45 @@
 // });
 
 // console.log(even);
+
+//-------------------------------------------------------------------------------------------------------------
+
+// reduce - it makes the array in single value
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let myarr = arr.reduce((res, el) => res + el);
+
+// console.log(myarr);
+
+//--------------------------------------------------------------------------------------------------
+// Write a program for the getting maximum number from array using reduce method
+
+// let myarr = [1,2,3,1]
+
+// let max = myarr.reduce( (max , el) => {
+//     if (max > el){
+//         return max;
+//     } else {
+//         return el;
+//     }
+
+// })
+
+
+// console.log(max);
+
+// --------------------------------------------------------------------------------------------------------
+// ------------------------------------ default parameters in function ------------------------------------ 
+
+function sum (a , b = 10) {
+    return a + b;
+}
+
+// console.log(sum(10)); //for b default parameter is use
+
+    function sum2( a = 2, b) {
+        return a + b;
+    }
+
+    // console.log(sum2(2)); //output - NAN :Always place default parameter at the end , becasue missing arguments are assigned from left to right..Which can cause undefined values if defaults come first 
