@@ -165,11 +165,37 @@ let data = {
 
 
 let datacopy = {...data, id : 123};
-console.log(datacopy);
+// console.log(datacopy);
 
 // ---------------------------we can also use the same to convert array into the object--------------------------- 
 
 let arrnew = [10,20,30,40,50,60,70];
 
 let newobj = {...arrnew}; //it will consider array indexing as the property key     
-console.log(newobj);
+// console.log(newobj);
+
+// --------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------IMPORTANT - Arguments---------------------------------------------
+
+// definaiton - it is a build-in object avaliable inside every non_arrow funciton that contains the values passed to the funciton
+
+// it is array like (has index and length method) but nor really array.....
+function test() {
+    console.log(arguments); //it stores all the values passed to the function 
+}
+
+test(1,2,4,55);
+
+// ----------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------rest method--------------------------------------------------
+
+// defination -  
+function sum (...args)  {
+    return args.reduce((arg , el) => {
+        return arg + el;
+    });
+};
+
+let result = sum(1,2,3,4,4,4,5,6,7,8,9,);
+console.log(result);
+
