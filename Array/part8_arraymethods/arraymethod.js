@@ -184,18 +184,39 @@ function test() {
     console.log(arguments); //it stores all the values passed to the function 
 }
 
-test(1,2,4,55);
+// test(1,2,4,55);
 
 // ----------------------------------------------------------------------------------------------------------------
 // --------------------------------------------------rest method--------------------------------------------------
 
-// defination -  
+// defination - (...) rest opertor is used to collect remaining elements or argument into a single array mainly in function parameter and destructing 
+
 function sum (...args)  {
     return args.reduce((arg , el) => {
         return arg + el;
-    });
+    } , 0); //0 - starts the accumulator value from zero 
 };
 
 let result = sum(1,2,3,4,4,4,5,6,7,8,9,);
-console.log(result);
+// console.log(result);
+
+
+// A function that uses the rest opertor along with normal parameters 
+function min( msg, ...args){
+    console.log(msg);
+    return args.reduce((arg , el) =>{
+        if (arg > el){
+            return el;
+        } else {
+            return arg;
+        }
+
+    })
+
+}
+
+console.log(min( 24 , 12 , 10)); //Rest operator collects remaining arguments after sequential assignment.
+
+// ----------------------------------------------------------------------------------------------------------------
+//
 
