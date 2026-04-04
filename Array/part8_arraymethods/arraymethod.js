@@ -201,7 +201,7 @@ let result = sum(1,2,3,4,4,4,5,6,7,8,9,);
 // console.log(result);
 
 
-// A function that uses the rest opertor along with normal parameters 
+// -----------------------A function that uses the rest opertor along with normal parameters----------------------
 function min( msg, ...args){
     console.log(msg);
     return args.reduce((arg , el) =>{
@@ -215,8 +215,29 @@ function min( msg, ...args){
 
 }
 
-console.log(min( 24 , 12 , 10)); //Rest operator collects remaining arguments after sequential assignment.
+// console.log(min( 24 , 12 , 10)); //Rest operator collects remaining arguments after sequential assignment.
 
 // ----------------------------------------------------------------------------------------------------------------
-//
+// Destructing - -------------------------storing values of array into multiple variables-------------------------
 
+let names = ["Atharva" , "Shyamsunder" , "niyati" , "archie" , "Ayush"];
+
+let [winner , runnerup , ...others] = names;
+// console.log(winner , runnerup , others); //remaining elements are collected into an array using the rest opertor during destructuring
+
+
+// --------------------------------------------Destructuring (Objects)--------------------------------------------
+const student = {
+    name : "Atharva Kesarkar",
+    rollno : "BV24-AIDS-18",
+    college : "Thakur college of enginnerring",
+    course : "Bvoc",
+    username : "Atharvakesarkar2410",
+    password : "Athu2410"
+}
+
+
+let {username : user , password : passwd , city : place = "Mumbai"} = student;
+console.log(user);
+console.log(passwd);
+console.log(place);
