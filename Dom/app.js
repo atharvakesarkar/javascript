@@ -76,36 +76,42 @@ let all_a_tag = document.querySelectorAll("a");
 // using properties and method 
 
 let para = document.querySelector("p");
-console.dir(para);
+// console.dir(para);
 
 // 1.innerText - return or set the visible text of an element as it is appearns on the screen, ignoring the hidden content and respecting css styling 
-console.dir(para.innerText);
+// console.dir(para.innerText);
 
 // ________________________________________________________________________________________________________________
 // 2.innerHTML - returns or set the HTML content inside an element, including tags , attributes and text 
 
-console.dir(para.innerHTML);
+// console.dir(para.innerHTML);
 
 // ________________________________________________________________________________________________________________
 // 3.textContent - returns or sets all the text inside an element exactly as it is exists in the DOM , including hidden text but excluding HTML tags 
 
-console.dir(para.textContent);
+// console.dir(para.textContent);
 
 // ----------------------------------------------------------------------------------------------------------------
 // changing the innerText
 let change_innerText = para.innerText = "Atharva kesarkar";
-console.dir(change_innerText);
+// console.dir(change_innerText);
 
 // changing the innerHTML
 let change_innerHTML = para.innerHTML = "<b>Atharva kesarkar</b> will be the good developer very soon"; //browser understand tags like <b> to format the text 
-console.dir(change_innerHTML);
+// console.dir(change_innerHTML);
 
 // changing the textContent
 // let change_textContent = para.textContent = "you need to showup everyday , to be a good developer";
-console.dir(change_innerHTML);
+// console.dir(change_innerHTML);
 
 // using 4the backtick
 let heading = document.querySelector("h1");
 // console.dir(heading);
 
 heading.innerHTML = `<b>${heading.innerText}</b>` //uses the backtick (template literals) to embeded a variable inside HTML using ${}
+
+// ----------------------------------------------------------------------------------------------------------------
+// --------------------------------------------Manipulation attributes---------------------------------------------
+let img = document.querySelector("#description");
+console.dir(img);
+console.dir(img.getAttribute("id"));
