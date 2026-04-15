@@ -68,8 +68,6 @@ let all_a_tag = document.querySelectorAll("a");
 // console.dir(all_a_tag);
 
 
-
-
 // ----------------------------------------------------------------------------------------------------------------
 // setting content in objects
 
@@ -93,7 +91,7 @@ let para = document.querySelector("p");
 
 // ----------------------------------------------------------------------------------------------------------------
 // changing the innerText
-let change_innerText = para.innerText = "Atharva kesarkar";
+// let change_innerText = para.innerText = "Atharva kesarkar";
 // console.dir(change_innerText);
 
 // changing the innerHTML
@@ -101,7 +99,7 @@ let change_innerHTML = para.innerHTML = "<b>Atharva kesarkar</b> will be the goo
 // console.dir(change_innerHTML);
 
 // changing the textContent
-// let change_textContent = para.textContent = "you need to showup everyday , to be a good developer";
+let change_textContent = para.textContent = "you need to showup everyday , to be a good developer";
 // console.dir(change_innerHTML);
 
 // using 4the backtick
@@ -110,8 +108,28 @@ let heading = document.querySelector("h1");
 
 heading.innerHTML = `<b>${heading.innerText}</b>` //uses the backtick (template literals) to embeded a variable inside HTML using ${}
 
-// ----------------------------------------------------------------------------------------------------------------
-// --------------------------------------------Manipulation attributes---------------------------------------------
-let img = document.querySelector("#description");
-console.dir(img);
-console.dir(img.getAttribute("id"));
+// --------------------------------------------Manipulating attributes--------------------------------------------
+// let img = document.querySelector("#mainImg"); //select the id 'mainIMG' and put in img variable
+// console.dir(img); //printed the value of the image
+// console.dir(img.getAttribute("id")); //by using the getAttribute select again the id in img variable
+// console.dir(img.setAttribute('id' , 'spidermanIMG')) //by using the setAttribute chagne the value of id in the img , becaue of which the size of image has change , becasue in id mainImg the width is 30% and in spidermanIMG the width is 55%
+
+
+// changing the src attribute of the image
+
+let change_Imgsrc = document.querySelector(".oldImg");
+// console.dir(change_Imgsrc);
+
+console.dir(change_Imgsrc.getAttribute("src"));
+console.dir(change_Imgsrc.setAttribute("src", 'assets/spiderman_img.png'));
+
+// to change another image of same class , we need to call the collection and for that we will using querySelectorAll()
+
+let change_secondImgsrc = document.querySelectorAll(".oldImg");
+// console.dir(change_secondImgsrc);
+
+for (let i = 0; i <change_secondImgsrc.length; i++){
+    console.dir(change_secondImgsrc[i].setAttribute("src" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmleZhMmVmcjLXJ_3tDBhn_O3aOyUaZENOHg&s"));
+} 
+
+change_secondImgsrc[2].setAttribute("src" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRew0HxORktvV7Z4Qm11xwO_TIl-tUOUExzjA&s")
