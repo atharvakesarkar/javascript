@@ -117,19 +117,51 @@ heading.innerHTML = `<b>${heading.innerText}</b>` //uses the backtick (template 
 
 // changing the src attribute of the image
 
-let change_Imgsrc = document.querySelector(".oldImg");
+// let change_Imgsrc = document.querySelector(".oldImg");
 // console.dir(change_Imgsrc);
 
-console.dir(change_Imgsrc.getAttribute("src"));
-console.dir(change_Imgsrc.setAttribute("src", 'assets/spiderman_img.png'));
+// console.dir(change_Imgsrc.getAttribute("src"));
+// console.dir(change_Imgsrc.setAttribute("src", 'assets/spiderman_img.png'));
 
 // to change another image of same class , we need to call the collection and for that we will using querySelectorAll()
 
-let change_secondImgsrc = document.querySelectorAll(".oldImg");
+// let change_secondImgsrc = document.querySelectorAll(".oldImg");
 // console.dir(change_secondImgsrc);
 
-for (let i = 0; i <change_secondImgsrc.length; i++){
-    console.dir(change_secondImgsrc[i].setAttribute("src" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmleZhMmVmcjLXJ_3tDBhn_O3aOyUaZENOHg&s"));
-} 
+// for (let i = 0; i <change_secondImgsrc.length; i++){
+//     console.dir(change_secondImgsrc[i].setAttribute("src" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmleZhMmVmcjLXJ_3tDBhn_O3aOyUaZENOHg&s"));
+// } 
 
-change_secondImgsrc[2].setAttribute("src" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRew0HxORktvV7Z4Qm11xwO_TIl-tUOUExzjA&s")
+// change_secondImgsrc[2].setAttribute("src" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRew0HxORktvV7Z4Qm11xwO_TIl-tUOUExzjA&s")
+
+
+// ----------------------------------------------------------------------------------------------------------------
+// -----------------------------------Manipulation style (with style attributes)-----------------------------------
+
+// change the size of the image
+let img_styleChange = document.querySelectorAll(".oldImg"); 
+// console.dir(img_styleChange);
+img_styleChange[1].style.width = "600px";
+console.dir(img_styleChange[1].style.width);
+
+// changing the color of heading
+let get_heading = document.querySelector(".mainHead");  
+// console.dir(get_heading);
+get_heading.style.color ="pink";
+
+// ___________________________________________________________________________________________________________
+// changing the color of list  
+let get_list = document.querySelectorAll(".boxLink"); //It selects all elements with the class .boxLink
+console.dir(get_list);
+
+// for (let i = 0; i < get_list.length; i++){ 
+//     get_list[i].style.color = "yellow"; //It accesses the element’s style object and sets the color property 
+// }
+
+// -----------------------------------------alternate code for the "loop"----------------------------------------
+
+// for(link of get_list) {
+//     link.style.color = "red";
+// }
+
+// --------------------------------------------------------------------------------------------------------------
