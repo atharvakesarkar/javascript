@@ -3,7 +3,7 @@
 
 // ----------------------------------------------------------------------------------------------------------------
 
-// let para_obj = document.getElementById("description");
+// let para_obj = document.getElementById(  "description");
 // console.dir(para_obj); //inspect the element object in the console
 
 // update the text content of selected element (replaces the exisiting text)
@@ -17,9 +17,9 @@
 // console.dir(document.getElementsByClassName("box").classname = "Atharva"); //the class name is change from box to Atharva
 // console.dir(document.getElementsByClassName("box"));
 
-// printing all small images
+// printing all small images 
 let smallimages = document.getElementsByClassName("oldImg");
-// console.dir(smallimages);
+// console.dir(smallimages);x
 
 // change the images with main img 
 for (let i = 0;  i < smallimages.length; i++){
@@ -165,3 +165,34 @@ console.dir(get_list);
 // }
 
 // --------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------classList---------------------------------------------------
+//  classList is the property of a DOM element that provides a way to access and modify the elements CSS classess as a list 
+
+
+let head_list = document.querySelector("h1"); //select first <h1> element from the HTML code 
+// console.dir(head_list);
+
+// to get all the classes in h1 element as a list 
+let totalclass = head_list.classList; //get all classes of that <h1> element (as a list)
+// console.dir(total_class); //print the list of classes in the console
+
+// classList.add() adds one or more classes of an element 
+let addClass = head_list.classList.add("athu" ,"krutu");
+// console.dir(head_list.classList);
+
+// classList.remove() - remove one or more classes of an element 
+let removeClass = head_list.classList.remove("athu" , "atharva" , "krutika");
+// console.dir(head_list.classList);
+
+// classList.contains() - return true if the class exist and false if don't 
+// console.dir(head_list.classList.contains("mainHead")); //true 
+
+// classList.toggle() - if the class exist it will remove it and return false and if dosent exist it will add it and return true 
+// console.dir(head_list.classList.toggle("sanket"));
+// console.dir(head_list.classList);
+
+
+
+
+
+// ----------------------------------------------------------------------------------------------------------------
